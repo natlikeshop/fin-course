@@ -147,44 +147,55 @@ body {
 }
 .btn-primary {
     background: var(--primary-grad);
-    color: #fff;
+    color: #fff !important;
 }
 .btn-primary:hover {
     box-shadow: var(--shadow-neon);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.08);
 }
 .btn-secondary {
     background: var(--secondary-grad);
-    color: #fff;
+    color: #fff !important;
 }
 .btn-secondary:hover {
     box-shadow: var(--shadow-purple);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.08);
 }
 .btn-outline {
     background: transparent;
     border: 1px solid var(--border-color);
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
 }
 .btn-outline:hover {
-    background: rgba(0, 0, 0, 0.03);
-    border-color: var(--text-primary);
+    background: rgba(14, 165, 233, 0.05);
+    border-color: var(--accent);
+    color: var(--accent) !important;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(14, 165, 233, 0.1);
 }
 .btn-danger {
     background: var(--danger-grad);
-    color: #fff;
+    color: #fff !important;
 }
 .btn-danger:hover {
     box-shadow: 0 8px 20px rgba(239, 68, 68, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.08);
 }
 .btn-success {
     background: var(--success-grad);
-    color: #fff;
+    color: #fff !important;
 }
 .btn-success:hover {
     box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
+    filter: brightness(1.08);
+}
+.btn:active {
+    transform: translateY(0) scale(0.98);
+    filter: brightness(0.95);
 }
 .btn-sm {
     padding: 6px 14px;

@@ -45,7 +45,7 @@ $activePage = $_GET['page'] ?? 'home';
                     </li>
                 <?php else: ?>
                     <li><a href="index.php?page=login" class="btn btn-outline btn-sm">เข้าสู่ระบบ</a></li>
-                    <li><a href="index.php?page=register" class="btn btn-primary btn-sm">สมัครสมาชิก</a></li>
+                    <li><a href="index.php?page=register" class="btn btn-primary btn-sm" style="color: #fff;">สมัครสมาชิก</a></li>
                 <?php endif; ?>
             </ul>
         </div>
